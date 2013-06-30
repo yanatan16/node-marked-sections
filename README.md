@@ -15,10 +15,11 @@ mdsec.setOptions({
 });
 
 html = mdsec.parse(markdownText);
+html2 = mdsec.parse(markdownText, { heirarchy: true }); // change options
 
 // Or you can do it manually
 tree = mdsec.marked.lexer(markdownText);
-sectree = mdsec.insertSections(tree, { levels: 1 });
+sectree = mdsec.sectionalize(tree);
 html = mdsec.marked.parser(sectree);
 ```
 
