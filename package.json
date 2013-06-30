@@ -1,6 +1,6 @@
 {
   "name": "marked-sections",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Section wrapping for markdown parsing",
   "author": "Jon Eisen <jon.m.eisen@gmail.com>",
   "repository": {

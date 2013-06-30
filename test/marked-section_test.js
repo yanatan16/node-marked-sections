@@ -29,7 +29,7 @@ tests.testHeaderLevel = function (test) {
 
 tests.testHeaderHeirarchy = function (test) {
 	var text = '# head1\ntest\n\n## head2\n- l1\n- l2\n\n# head12';
-	var output = mdsec.parse(text, {levels: 2, heirarchy: 2}).replace(/[\n\t]/g, '');
+	var output = mdsec.parse(text, {levels: 2, heirarchy: true}).replace(/[\n\t]/g, '');
 
 	test.equal('<section><section><h1>head1</h1><p>test</p></section><section><h2>head2</h2><ul><li>l1</li><li>l2</li></ul></section></section><section><section><h1>head12</h1></section></section>', output);
 	test.done();
