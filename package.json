@@ -1,0 +1,22 @@
+{
+  "name": "marked-sections",
+  "version": "0.0.1",
+  "description": "Section wrapping for markdown parsing",
+  "author": "Jon Eisen <jon.m.eisen@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanatan16/node-marked-sections.git"
+  },
+  "main": "lib/marked-sections.js",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "marked": "~0.2.9",
+    "underscore": "~1.4.4"
+  },
+  "engines": {
+    "node": ">=0.8.x"
+  }
+}
