@@ -51,3 +51,11 @@ tests.testSetOptions = function (test) {
 	test.equal('<section><h1>head1</h1><p>test</p><h2>head2</h2><ul><li>l1</li><li>l2</li></ul></section><section><h1>head12</h1></section>', output);
 	test.done();
 }
+
+tests.testHr = function (test) {
+	var text = '# head1\n---\n# head1';
+	var output = mdsec.parse(text, {heirarchy: false}).replace(/[\n\t]/g, '');
+
+	test.equal('<section><h1>head1</h1></section><hr><section><h1>head1</h1></section>', output);
+	test.done();
+}
