@@ -30,7 +30,7 @@ html = mdsec.marked.parser(sectree);
 
 - `levels` refers to the header levels to wrap in sections. It should be the highest header level that should be wrapped in a section.
 - `hierarchy` will make each level of header wrapped in a hierarchy of section tags. Defaults to false.
-- `deep` will make a all hierarchy `levels` deep. Defaults to false. You probably don't want this on.
+- `deep` will make a all hierarchy `levels` deep. Defaults to false.
 - `promoteHr` will promote HR's outside of the sections (level 0). Defaults to true.
 
 For example, with hierarchy on:
