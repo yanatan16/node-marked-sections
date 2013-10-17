@@ -9,14 +9,14 @@ var mdsec = require('marked-sections');
 
 mdsec.setOptions({
 	levels: 2,
-	heirarchy: false,
+	hierarchy: false,
 	deep: false,
 	// marked options too
 	gfm: true // see marked for full docs
 });
 
 html = mdsec.parse(markdownText);
-html2 = mdsec.parse(markdownText, { heirarchy: true }); // change options
+html2 = mdsec.parse(markdownText, { hierarchy: true }); // change options
 
 // Or you can do it manually
 tree = mdsec.marked.lexer(markdownText);
@@ -29,11 +29,11 @@ html = mdsec.marked.parser(sectree);
 `marked-sections` takes two options above and beyond marked.
 
 - `levels` refers to the header levels to wrap in sections. It should be the highest header level that should be wrapped in a section.
-- `heirarchy` will make each level of header wrapped in a heirarchy of section tags. Defaults to false.
-- `deep` will make a all heirarchy `levels` deep. Defaults to false. You probably don't want this on.
+- `hierarchy` will make each level of header wrapped in a hierarchy of section tags. Defaults to false.
+- `deep` will make a all hierarchy `levels` deep. Defaults to false. You probably don't want this on.
 - `promoteHr` will promote HR's outside of the sections (level 0). Defaults to true.
 
-For example, with heirarchy on:
+For example, with hierarchy on:
 
 	```
 	# H1
